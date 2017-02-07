@@ -1,5 +1,5 @@
 from . import settings
-import settings as project_settings
+from django.conf import settings as project_settings
 
 from django.http import Http404
 from django.db import IntegrityError
