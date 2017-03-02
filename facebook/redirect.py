@@ -43,7 +43,7 @@ def redirect_to_get_code(func):
             'client_id': obj.client_id,
             'response_type': 'code',
             'redirect_uri': redirect_url,
-            'scope': 'manage_pages, publish_pages, pages_show_list'
+            'scope': 'manage_pages, publish_pages, pages_show_list, user_photos, publish_actions'
         }
 
         url = URL_TO_FACEBOOK_LOGIN.format(

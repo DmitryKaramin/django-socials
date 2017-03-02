@@ -26,3 +26,7 @@ class Account(models.Model):
 
     def __unicode__(self):
         return self.name
+
+
+class Message(models.Model):
+    name = models.CharField(max_length=50)

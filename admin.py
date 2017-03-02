@@ -34,9 +34,5 @@ class SocialAdmin(admin.ModelAdmin):
         """
 
 
-class ArticlesAdmin(admin.ModelAdmin):
-    filter_horizontal = ('facebook_account',)
-
-
 admin.site.register(FacebookModel, SocialAdmin)
 admin.site.register(Account)
