@@ -56,19 +56,6 @@ def get_page_access_data(token):
             yield page_token, page_name, page_id
             i += 1
 
-    # PICTURE_URL = URL_BODY + '/' + page_id + '/picture'
-    #
-    # payload = {
-    #     'access_token': page_token,
-    #     'redirect': 'false'
-    # }
-    #
-    # r = requests.get(PICTURE_URL, params=payload)
-    #
-    # picture = request_get(PICTURE_URL, payload)
-    #
-    # print 'PICTURE URL ', r.json()
-
 
 def get_user_access_data(code, model):
     """
